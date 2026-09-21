@@ -1,0 +1,45 @@
+Fast Api based Application Development workshop
+FrontEnd-> BackEnd -> Database
+(react)    (fastapi)  (Mongo db)
+js            python   BSON doc = JSON + LOB
+
+
+UI Logic Buisseness Logic Persitent Store
+
+there are two dat base sources
+1. SQL(RDBMS)
+     database - table row
+     nested data will be in many tables using the relationship foreigh key
+2.no SQL - No only SQL-Mongodb(highly used in the market)
+*database - collection  of documents
+*document - hierarichal ie nested
+Mogo Db - client tool to connect to the server.
+Mongo  shell- client tool ie CLI to connect and work with 
+-----------------START---------------------
+To list databases:
+*show dbs
+*show databases
+To create databases:
+*use student_app_db
+To add the 'student' document to students col  
+*db.students.insertone({name:"varsha",age: 20,course:"CSE",year:2})-----to add extra details
+To list student documents
+* use db.students.find()
+find() - gives array of the document
+findone- gives only one document
+* db.students.insertMany([{"name:,age:,course:,year:}])
+To query document by id:
+* db.students.findone({_id:objectId('')})
+To query\filter by name:
+* db.students.find({name:""})
+* db.students.find()----gives all the content
+To filter by course "course_name"
+*db.students.updsteone({course:""})
+To update a particular feature
+*db.students.updateone({name:"",age:})----updates one document
+To update many documents
+*db.students.updateMany({})
+To delete a particular feature
+*db.students.deleteone({})
+To list the collections
+* show collections
