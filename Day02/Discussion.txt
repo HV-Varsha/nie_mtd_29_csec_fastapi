@@ -1,0 +1,29 @@
+Fast Api - python
+what is fastapi
+Rest Api - standard for Apis(web services)dev
+python : Django,Flask
+python has asyncio
+NodeJS has libuv
+
+starlette uvloop sits on libuv
+FastAPI : starlette(web development framework),pydantic(library for data validation and synchronization)
+   -ASGI based web dev framework
+   Asynchronous server Gateway Interface
+uvicorn rund the FastAPI(starlette) app
+---------------
+Prerequisites:python,python package fastapi,uvicorn
+RESTAPI
+    http method + url end point = API End point
+    http methods is calle verbs.
+    url is called noun.
+
+    POST/users
+    GET/users
+    GET/users/101
+    PUT/users/101
+    DELETE/users/101
+    *python -m uvicorn main:app --reload(to run the application server)
+    open through the link from which u got
+    http://127.0.0.1:8000
+    http://127.0.0.1:8000/tickets
+    http://127.0.0.1:8000/docs - here fastapi server will be visible where u can run and check the code of tickets
