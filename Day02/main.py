@@ -44,7 +44,7 @@ def tickets_update(id:int,payload : TicketCreate):
         raise HTTPException(detail="Ticket Not Found",status_code=404)
     db[id]={"id":id,**payload.model_dump()}
     return db[id]
-@app.delete("/ticket/{id}")
+@app.delete("/tickets/{id}")
 def tickets_delete(id : int):
     if id not in db:
         raise HTTPException(detail="Ticket Not Found",status_code=404)
