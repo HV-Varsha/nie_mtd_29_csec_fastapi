@@ -22,24 +22,48 @@ To list databases:
 To create databases:
 *use student_app_db
 To add the 'student' document to students col  
-*db.students.insertone({name:"varsha",age: 20,course:"CSE",year:2})-----to add extra details
+*db.students.insertOne({name:"varsha",age: 20,course:"CSE",year:2})-----to add extra details
 To list student documents
 * use db.students.find()
-find() - gives array of the document
-findone- gives only one document
+*find() - gives array of the document
+*findone- gives only one document
 * db.students.insertMany([{"name:,age:,course:,year:}])
 To query document by id:
-* db.students.findone({_id:objectId('')})
+* db.students.findOne({_id:objectId('')})
 To query\filter by name:
-* db.students.find({name:""})
+* db.students.findOne({name:""})
 * db.students.find()----gives all the content
 To filter by course "course_name"
-*db.students.updsteone({course:""})
+
 To update a particular feature
-*db.students.updateone({name:"",age:})----updates one document
+*db.students.updateOne({name:""}{$set:{course:""}})
 To update many documents
 *db.students.updateMany({})
 To delete a particular feature
 *db.students.deleteone({})
 To list the collections
 * show collections
+----------New Session--------
+setup the mongo server,mongo shell.
+Experimented CRUD ops with mongo db on students data.
+tickets:title,description,category,status#,assigned_to,resolved_by.
+Employee varsha raising the complaint tothr service team 'MyLaptop is not on'.
+TL Manasa assigns the ticket raised by Varsha Support Engineer kamala.
+Admin will create varsha,manasa,and kamala users.
+
+1.Create mongo database 'it_service_desk_db'
+use it_service_desk_db
+2.Add four users Admin,manansa,and kamala
+db.users.insertMany([{username:"Admin",password:"123",role:"admin"},{username:"varsha",password:"234",role:"Employee"},{username:"Manasa",password:"456",role:"teamlead"},
+{username:"Kamala",password:"567",role"support_eng"},
+{username:"varmankam",password:"789",role:"teamlead"}])
+db.users.find()
+3.manasa will create the ticket
+
+4.varsha assigns the ticket to kamala
+5.kamala updates the issue resolution status
+-----Hospital support request system------------
+*use supportrequest
+*db.users.supportrequest.insertMany([
+    {u}
+])
