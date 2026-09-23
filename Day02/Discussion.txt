@@ -17,8 +17,8 @@ RESTAPI
     http methods is calle verbs.
     url is called noun.
 
-    POST/users
-    GET/users
+    POST/users - create new ids details
+    GET/users - to see all the details  of all  ids
     GET/users/101
     PUT/users/101
     DELETE/users/101
