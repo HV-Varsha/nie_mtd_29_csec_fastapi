@@ -1,0 +1,28 @@
+Recap
+1.what is Api
+   ASGI based python web framework
+        -starlette - Pydantic -Documentation
+        -Documentation : /docs/redoc openapi spec json
+2.How to run the Fast API
+    uvicorn main:app --reload
+3.How to test Fast API
+    using swagger
+    Thunder client or Postman
+4.What did we learn 
+    mongo db basic operations CRUD(create,read,update,delete)
+    basic Fastapi app
+    crud operations on in-mem dict db
+Agenda
+      crud operations on mongosecured app
+      -backend app(server) business logics
+      -frontend app(client) ui logics
+
+      -docker compose to run three apps - orchestration
+      200 ok
+      201 created
+      204 no content
+      400 bad request
+      401 unathorized
+      403 forbidden
+      404 not found
+      500
